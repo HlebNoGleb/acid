@@ -1,0 +1,590 @@
+body{
+	font-family: 'Exo 2', sans-serif;
+	background-color: #1e1e1e!important;
+}
+.fireworks{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+}
+.first_screen{
+	background: url(../img/Post.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.company_name{
+	
+	margin: auto;
+	display: flex;
+    width: 20%;
+	transform: translate(-0%,115%) scale(1);
+    opacity: 1;
+    filter: drop-shadow( 10px 10px 5px  #000 );
+   /*animation: 5s hand infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);*/
+
+}
+
+ #logo{ 
+  animation: 5s hand infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);;
+
+}
+@keyframes hand{
+	0%{
+		fill:#cf859d;
+	}
+	25%{
+		fill:#9ff7f8;
+	}
+	50%{
+		fill:#9976c3;
+	}	
+	75%{
+		fill:#9ff7f8;
+	}
+	100%{
+		fill:#cf859d;
+	}
+}
+.buttons{
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+/////////////////////////////////////// BUTTONS //////////////////////////////////////
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+.btn1{
+	color: #cf859d;
+}
+.btn2{
+	color: #9ff7f8;
+}
+.btn3{
+	color: #9976c3;
+}
+.btn {
+  transition: 0.25s;
+}
+.btn:hover{
+  border-color: var(--hover);
+  color: #fff;
+}
+.btn {
+	width: 180px;
+	margin: 10px;
+	text-decoration: none;
+	outline: none;
+	text-align: center;
+	position: relative;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  padding: 1em 2em;
+  border-radius: 25px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+/*/////////////////////////////////////// BUTTONS //////////////////////////////////////*/
+
+
+/*/////////////////////////////////////// SLICK ///////////////////////////////////////*/
+.slick-prev {
+  z-index: 9999;
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  
+  
+}
+.slick-next {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  z-index: 9999;
+  
+}
+/*стрелочки слайдера*/
+.arrow {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline:0;
+}
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+  fill: 
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+.left:hover{
+  fill: #f15548;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+/*стрелочки слайдера*/
+
+
+/*точки для слайдера*/
+.my-dots {
+  position: absolute;
+  bottom: 15%;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '⚫';
+  text-align: center;
+  opacity: .5;
+  color: white;
+  border-radius: 45px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Обводка маркеров */
+  
+  /* WebKit (Safari/Chrome) Only */
+  -webkit-text-stroke: 5px white;
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+ /* text-shadow: 1px 1px 0 #f00,  Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit 
+  -1px -1px 0 #f00, 1px -1px 0 #f00, -1px 1px 0 #f00, 1px 1px 0 #f00;
+   /* / Обводка маркеров */*/
+   
+}
+.slick-slide img {
+    display: block;
+    margin: -7px auto;
+    width: 115%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-49.4%);
+}
+.carusel .chel1{
+	filter:drop-shadow(0 0 10px #585858);
+	position: relative;
+	background-image: url(../img/tshirt.png);
+	height: 100vh;
+-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.carusel .chel2{
+	filter:drop-shadow(0 0 10px #585858);
+	position: relative;
+	background-image: url(../img/tshirt1.png);
+	height: 100vh;
+-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.carusel .chel3{
+	filter:drop-shadow(0 0 10px #585858);
+	position: relative;
+	background-image: url(../img/tshirt2.png);
+	height: 100vh;
+-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*.carusel:nth-child(1){
+	background-image: url(../img/tshirt.png);
+}
+.carusel:nth-child(2){
+	background-image: url(../img/tshirt.png);
+}
+.carusel:nth-child(3){
+	background-image: url(../img/tshirt.png);
+}*/
+.my-dots li.slick-active button:before {
+  opacity: 1;
+  color: blue;
+  width: 20px;
+  -webkit-text-stroke: 7px #f15548; 
+   text-stroke: 7px #f15548; 
+
+}
+/*.main_slider,.carusel,.slick-list{
+  height: 100vh;
+}*/
+.main_slider{
+	 height: 100vh;
+	position: relative;
+	background-image: url(../img/man.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+/*/////////////////////////////////////// SLICK ///////////////////////////////////////*/
+
+/*//////////////////////////////////// WHO WE ARE ////////////////////////////////////*/
+
+body
+{
+  background-color:#1e1e1e
+}
+.wrap
+{
+  margin:50px auto 50px auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+}
+.tile
+{
+  width:380px;
+  height:380px;
+  margin:10px;
+  background-color:#99aeff;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:white;
+  font-family:'Roboto';
+  
+}
+.tile img
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+.tile .text
+{
+/*   z-index:99; */
+  position:absolute;
+  padding:30px;
+  height:calc(100% - 60px);
+}
+.tile h1
+{
+ 
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.tile h2
+{
+  font-weight:100;
+  margin:20px 0 0 0;
+  font-style:italic;
+   transform: translateX(200px);
+}
+.tile p
+{
+  font-weight:300;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+}
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+.tile:hover
+{
+/*   background-color:#99aeff; */
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+  transform:scale(1.05);
+}
+.tile:hover img
+{
+  opacity: 0.2;
+}
+.tile:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+.dots
+{
+  position:absolute;
+  bottom:20px;
+  right:30px;
+  margin: 0 auto;
+  width:30px;
+  height:30px;
+  color:currentColor;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  
+}
+
+.dots span
+{
+    width: 5px;
+    height:5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display:block;
+  opacity:0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px);
+ 
+}
+
+.tile:hover span
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+.dots span:nth-child(1)
+{
+   transition-delay: 0.05s;
+}
+.dots span:nth-child(2)
+{
+   transition-delay: 0.1s;
+}
+.dots span:nth-child(3)
+{
+   transition-delay: 0.15s;
+}
+
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:320px;
+    margin: 0;
+  }
+  .tile
+{
+  width:320px;
+  height:320px;
+  margin:0px;
+}
+
+
+/* Demo purposes only */
+
+/*//////////////////////////////////// WHO WE ARE ////////////////////////////////////*/
+
+@media only screen and (max-width: 1279px) {
+	.company_name{
+		width: 50%;
+	}
+	.card .details h2 {
+    color: #fff;
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+
+
+}
+.card .details p {
+    margin: 20px 0 0;
+    color: #fff;
+    font-size: 2vw;
+    line-height: 25px;
+}
+	
+}
+@media only screen and (max-width: 767px) {
+	.card .details h2 {
+    color: #fff;
+    font-size: 5vw;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+
+
+}
+.card .details p {
+    margin: 20px 0 0;
+    color: #fff;
+    font-size: 3vw;
+    line-height: 15px;
+}
+}
