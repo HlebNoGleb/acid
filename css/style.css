@@ -1,6 +1,9 @@
 body{
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Exo 2';
 	background-color: #1e1e1e!important;
+}
+*{
+  font-family: 'Exo 2';
 }
 .fireworks{
 	position: fixed;
@@ -180,15 +183,6 @@ body{
     /* line-height: 1; */
     padding: 20px 0px;
     border-radius: 25px;
-}
-
-h1 {
-  font-weight: 400;
-}
-
-code {
-  color: #e4cb58;
-  font: inherit;
 }
 
 /*/////////////////////////////////////// BUTTONS //////////////////////////////////////*/
@@ -440,20 +434,19 @@ polyline {
 .tile h1
 {
  
-  font-weight:300;
+    font-family: 'Exo 2';
   margin:0;
   text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 .tile h2
 {
-  font-weight:100;
+    font-family: 'Exo 2';
   margin:20px 0 0 0;
-  font-style:italic;
    transform: translateX(200px);
 }
 .tile p
 {
-  font-weight:300;
+    font-family: 'Exo 2';
   margin:20px 0 0 0;
   line-height: 25px;
 /*   opacity:0; */
@@ -480,7 +473,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform:translateX(0);
   opacity:1;
 }
-.dots
+/*.dots
 {
   position:absolute;
   bottom:20px;
@@ -507,7 +500,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transition: transform 0.4s ease-out, opacity 0.5s ease;
   transform: translateY(30px);
  
-}
+}*/
 
 .tile:hover span
 {
@@ -541,11 +534,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 /**
  * Base Settings/Overwrite Normalize
  */
-*, *:before, *:after {
-  box-sizing: border-box;
-}
 
-h1 {
+
+article h1 {
   margin-top: 0;
   margin-bottom: 0.25em;
   font-size: 4em;
@@ -554,25 +545,11 @@ h1 {
   color: white;
 }
 
-p {
+article p {
   margin: 0;
   color: white;
 }
 
-a {
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  color: #a9b1b3;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  border: 1px solid #a9b1b3;
-  transition: all 0.3s ease-in;
-}
-a:hover, a:active, a:focus {
-  color: #fff;
-  background-color: #a9b1b3;
-}
 
 figure {
   margin: 0;
