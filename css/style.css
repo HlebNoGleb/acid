@@ -20,7 +20,10 @@ body{
 	margin: auto;
 	display: flex;
     width: 20%;
-	transform: translate(-0%,115%) scale(1);
+	   position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-70%) scale(1);
     opacity: 1;
     filter: drop-shadow( 10px 10px 5px  #000 );
    /*animation: 5s hand infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);*/
@@ -541,6 +544,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   height:320px;
   margin:10px;
 }
+}
 @media (max-width: 768px) {
   .wrap {
     width:100%;
@@ -555,7 +559,23 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   height:100vw;
   margin:0;
 }
+}
 @media (max-width: 450px) {
+  .company_name{
+  
+  margin: auto;
+  display: flex;
+    width: 20%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-100%) scale(1);
+    opacity: 1;
+    filter: drop-shadow( 10px 10px 5px  #000 );
+   /*animation: 5s hand infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);*/
+
+}
+
   .wrap {
     width:100%;
     flex-direction: column;
@@ -568,6 +588,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   width:100vw;
   height:100vw;
   margin:0;
+}
 }
 
 
