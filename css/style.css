@@ -744,17 +744,6 @@ figure {
   letter-spacing: 0.3em;
   overflow: hidden;
 }
-.post__category:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 3em;
-  background-color: #000;
-  -webkit-animation: slide-in 1s ease-in both 0.5s;
-          animation: slide-in 1s ease-in both 0.5s;
-}
 .post__content {
   padding: 2em 0;
 }
