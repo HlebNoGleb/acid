@@ -30,3 +30,12 @@ function Length() {
 	alert("0 " + len0 + "1 " + len1 + "2 " + len2 + "3 " + len3 + "4 " + len4 + "5 " + len5
 	+ "6 " + len6 + "7 " +len7 + "8" + len8);
 };
+
+		$(document).ready(function(){
+		$(".et-hero-tabs-container").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+		});
+		});
