@@ -853,6 +853,10 @@ figure {
   }
 }
 
+.parallax_text_h1{
+  font-size: 80px;
+}
+
 
 /*//////////////////////////////////// ADVANTAGES ////////////////////////////////////*/
 @media (max-width: 1279px) {
