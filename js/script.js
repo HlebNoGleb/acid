@@ -4,7 +4,7 @@ document.body.onload = function(){
 		if(!preloader.classList.contains('done')){
 			preloader.classList.add('done');
 		}
-	}, 1000);
+	}, 3000);
 }
 $('.carusel').slick({
 	arrows: true,
